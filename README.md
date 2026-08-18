@@ -1,5 +1,3 @@
-Yes — for **GitHub**, the README should be more project-oriented and concise, while still documenting the dissertation methodology. You can use this directly as your `README.md`:
-
 # 📰 Political News Sentiment Analysis
 
 A comparative study of **VADER, BERT, RoBERTa, and DistilBERT** for sentiment classification of political news articles.
