@@ -1,4 +1,8 @@
-**Methodology:**\n",
+## 📝 DISSERTATION WRITE-UP REFERENCE\n",
+    "\n",
+    "### What to write in each section based on this notebook:\n",
+    "\n",
+    "**Methodology:**\n",
     "- Dataset: All the News (Kaggle, snapcrack) filtered to political articles using keyword matching; auto-labelled using VADER (compound score threshold: >0.05 positive, <-0.05 negative, else neutral) following Samin et al. (2024)\n",
     "- Train/Val/Test: 70/15/15 stratified split\n",
     "- Models: VADER (baseline, no training), BERT (bert-base-uncased), RoBERTa (roberta-base), DistilBERT (distilbert-base-uncased)\n",
@@ -18,4 +22,4 @@
     "- Link back to your research questions\n",
     "- Limitations: VADER auto-labelling introduces noise; single dataset; English only\n",
     "- Future work: multilingual models, explainability (SHAP/LIME), real-time monitoring"
- 
+  
