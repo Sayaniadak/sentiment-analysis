@@ -1,1 +1,21 @@
-# sentiment-analysis
+**Methodology:**\n",
+    "- Dataset: All the News (Kaggle, snapcrack) filtered to political articles using keyword matching; auto-labelled using VADER (compound score threshold: >0.05 positive, <-0.05 negative, else neutral) following Samin et al. (2024)\n",
+    "- Train/Val/Test: 70/15/15 stratified split\n",
+    "- Models: VADER (baseline, no training), BERT (bert-base-uncased), RoBERTa (roberta-base), DistilBERT (distilbert-base-uncased)\n",
+    "- Fine-tuning: 3 epochs, learning rate 2e-5, warmup ratio 0.1, weight decay 0.01, batch size 16, max sequence length 256\n",
+    "- Evaluation: Accuracy, Macro Precision, Macro Recall, Macro F1-score\n",
+    "- Framework: HuggingFace Transformers, PyTorch, Google Colab (T4 GPU)\n",
+    "\n",
+    "**Results:**\n",
+    "- Report the table from final_results.csv\n",
+    "- Include model_comparison_chart.png and f1_ranking.png as figures\n",
+    "- Include one confusion matrix figure per model\n",
+    "- State which model performed best and by how much\n",
+    "\n",
+    "**Conclusion:**\n",
+    "- State the winning model and its F1-score\n",
+    "- Compare to the VADER baseline to show improvement from fine-tuning\n",
+    "- Link back to your research questions\n",
+    "- Limitations: VADER auto-labelling introduces noise; single dataset; English only\n",
+    "- Future work: multilingual models, explainability (SHAP/LIME), real-time monitoring"
+ 
